@@ -22,7 +22,7 @@ body {
   padding: 2rem;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -157,8 +157,50 @@ img {
   opacity: 1;
 }
 
-.vip{
+.vip {
   color: yellow;
   text-shadow: 0 0 10px rgba(255, 255, 0, 0.397);
   font-size: 30px;
+}
+
+.select {
+  background: red;
+  border: none;
+  position: fixed;
+  left: 0;
+  transform: rotate(90deg);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.select:hover {
+  box-shadow: rgba(255, 0, 0, 0.219) 0 0 100px;
+}
+
+.overlay{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  background: #0000002d;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.hidden_card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hidden_card > p{
+  font-size: 22px;
+  color: black;
+  font-weight: 700;
 }
